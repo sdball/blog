@@ -1,0 +1,32 @@
+---
+layout: single
+title:  "Welcome!"
+date:   2016-08-14 13:34:01 -0400
+categories: blog
+---
+
+Hello! In a few days I'll be formally launching this blog as a resource to help everyone have awesome unix command line knowledge!
+
+This Thursday, August 18, I'll be giving a talk at Abstractions titled "Power Up Your Prompt!" (hey! convergence!). Once that's done and I've come down out of the crazy mental place that talk prep and delivery puts me into then I'll start stuffing my notes into a markdown files and calling them blog posts here.
+
+Until then, let's see how the syntax highlighting in Jekyll 3 does shall we?
+
+{% highlight shell %}
+for n in {1..100}; do echo $n; done
+
+while true; do uptime; sleep 1; done
+
+alias ack=sl
+alias please=sudo
+
+weather() {
+  curl -s http://wttr.in/$1
+}
+
+app-tree-imgcat() {
+  mix app.tree --format dot &> /dev/null && dot -Tpng app_tree.dot \
+  | imgcat; rm -f app_tree.dot
+}
+{% endhighlight %}
+
+Not bad!
